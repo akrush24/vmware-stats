@@ -26,13 +26,13 @@ AllUsedSpaceGB = 0
 AllProvisionedSpaceGB = 0
 AllFreeSpaceGB = 0
 with open('../datastores.csv', 'r') as f:
-    reader = csv.reader(f, delimiter=';', )
+    reader = csv.reader(f, delimiter=',', )
     for row in reader:
         Datacenter = row[0]
 	if Datacenter != "Datacenter":
             NumVMHost = int(row[8])
             Type = row[3]
-            if NumVMHost > 2 and Type == 'VMFS':
+            if NumVMHost > 1 and Type == 'VMFS':
                 DatastoreName = row[1]
                 TotalSpaceGB = int(row[2])
                 AllTotalSpaceGB = int(AllTotalSpaceGB) + int(TotalSpaceGB)
