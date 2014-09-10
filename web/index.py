@@ -2,6 +2,8 @@
 # -*- coding: UTF-8 -*-# enable debugging
 import cgitb
 import csv
+import os.path, time
+
 cgitb.enable()
 print("Content-Type: text/html;charset=utf-8")
 
@@ -63,7 +65,7 @@ print """
   </head>
   <body>
 """
-print "<b>last modified: %s" % time.ctime(os.path.getmtime('../datastores.csv'))
+print "    <b>last modified: %s" % time.ctime(os.path.getmtime('../datastores.csv'))
 print "    <b>Total: <tt>"+str(AllTotalSpaceGB)+"GB</tt> "
 print "    <b>Used: <tt>"+str(AllUsedSpaceGB)+"GB</tt> "
 print "    <b>Free: <tt>"+str(AllFreeSpaceGB)+"GB</tt> "
