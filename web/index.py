@@ -26,7 +26,7 @@ AllUsedSpaceGB = 0
 AllProvisionedSpaceGB = 0
 AllFreeSpaceGB = 0
 with open('../datastores.csv', 'r') as f:
-    reader = csv.reader(f, delimiter=';', )
+    reader = csv.reader(f, delimiter=',', )
     for row in reader:
         Datacenter = row[0]
 	if Datacenter != "Datacenter":
