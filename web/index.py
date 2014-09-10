@@ -63,7 +63,7 @@ print """
   </head>
   <body>
 """
-print "<b>last modified: %s" % modification_date('../datastores.csv')
+print "<b>last modified: %s" % time.ctime(os.path.getmtime('../datastores.csv'))
 print "    <b>Total: <tt>"+str(AllTotalSpaceGB)+"GB</tt> "
 print "    <b>Used: <tt>"+str(AllUsedSpaceGB)+"GB</tt> "
 print "    <b>Free: <tt>"+str(AllFreeSpaceGB)+"GB</tt> "
