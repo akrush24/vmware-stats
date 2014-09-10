@@ -1,4 +1,4 @@
 #!/bin/bash
-git add -A 
-git commit -m "`date`, from WEB"
-git push -u origin master
+/bin/git add -A 
+/bin/git commit -m "`date`, from WEB"
+/bin/git push -u origin master
