@@ -63,7 +63,7 @@ print """
   </head>
   <body>
 """
-print " <b> 2014.09.10 </b>"
+print "<b>last modified: %s" % modification_date('../datastores.csv')
 print "    <b>Total: <tt>"+str(AllTotalSpaceGB)+"GB</tt> "
 print "    <b>Used: <tt>"+str(AllUsedSpaceGB)+"GB</tt> "
 print "    <b>Free: <tt>"+str(AllFreeSpaceGB)+"GB</tt> "
