@@ -1,3 +1,3 @@
 #!/bin/bash
 cd c:/script/stat/
-git pill
+/bin/git pill
