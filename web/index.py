@@ -53,7 +53,7 @@ print """
         var options = {
           legend: { position: 'top', alignment: 'start' },
           title: 'iSCSI Share Storages',
-          chartArea:{left:250,top:70},
+          chartArea:{left:300,top:70},
         };
 
         var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
@@ -65,13 +65,13 @@ print """
   </head>
   <body>
 """
-print "    <b>last modified: %s" % time.ctime(os.path.getmtime('../datastores.csv'))+"<hr>"
+print "    <b>Last Update:</b> %s" % time.ctime(os.path.getmtime('../datastores.csv'))+"<hr>"
 print "    <b>Total: <tt>"+str(AllTotalSpaceGB)+"GB</tt> "
 print "    <b>Used: <tt>"+str(AllUsedSpaceGB)+"GB</tt> "
 print "    <b>Free: <tt>"+str(AllFreeSpaceGB)+"GB</tt> "
 print "    <b>Provisioned: <tt>"+str(AllProvisionedSpaceGB)+"GB</tt></b>"
 print """
-    <div id="chart_div" style="width: 1500px; height: 1000px;"></div>
+    <div id="chart_div" style="width: 1700px; height: 1000px;"></div>
   </body>
 </html>
 """
