@@ -71,7 +71,7 @@ print "    <b>Used: <tt>"+str(AllUsedSpaceGB)+"GB</tt> "
 print "    <b>Free: <tt>"+str(AllFreeSpaceGB)+"GB</tt> "
 print "    <b>Provisioned: <tt>"+str(AllProvisionedSpaceGB)+"GB</tt></b>"
 print """
-    <div id="chart_div" style="width: 1700px; height: 1000px;"></div>
+    <div id="chart_div" style="width: 1400px; height: 1000px;"></div>
   </body>
 </html>
 """
